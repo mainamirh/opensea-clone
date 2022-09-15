@@ -1,0 +1,110 @@
+.trending-section {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trending-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.trending-container {
+  position: relative;
+  width: 1300px;
+}
+
+.trending-container .nft-slide {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  transition: box-shadow 0.15s;
+}
+
+.trending-container .nft-slide:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.trending-container .nft-slide .nft-image {
+  width: 420px;
+  height: 240px;
+  border-radius: 10px 10px 0 0;
+}
+
+.trending-container .nft-slide .footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 81px;
+  position: relative;
+}
+
+.trending-container .nft-slide .footer .name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 115px;
+  margin-right: 5px;
+}
+
+.trending-container .nft-slide .owner-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 1px 6px 5px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: -10px;
+  left: 18px;
+  transition: box-shadow 0.15s;
+}
+
+.trending-container .nft-slide .owner-profile:hover {
+  box-shadow: 1px 6px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trending-container .nft-slide .profile {
+  width: 69px;
+  height: 69px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.nft-slide .footer .verified-icon {
+  width: 18px;
+}
+
+.trending-section .prev-button,
+.trending-section .next-button {
+  background-color: white;
+  box-shadow: 0 1px 5px rgb(187, 187, 187);
+  border-radius: 25px;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 4px;
+  position: absolute;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  z-index: 1;
+  user-select: none;
+}
+
+.trending-section .prev-button:hover,
+.trending-section .next-button:hover {
+  box-shadow: 0 1px 7px rgb(157, 157, 157);
+}
+
+.trending-section .prev-button {
+  top: 35%;
+  left: -15px;
+}
+
+.trending-section .next-button {
+  top: 35%;
+  right: -10px;
+}

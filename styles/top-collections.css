@@ -1,0 +1,144 @@
+p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.top-collections-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 702px;
+}
+
+.top-collections-container .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.top-collections-container .collections-grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-collections-container .collections-grid .column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.top-collections-container .go-ranking {
+  background-color: rgb(32, 129, 226);
+  color: white;
+  padding: 19px 26px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.top-collections-container .go-ranking:hover {
+  opacity: 0.9;
+}
+
+.collection-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(229, 232, 235);
+  padding: 16px;
+  width: 329px;
+  height: 54px;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.collection-container:hover {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.collection-container .currency {
+  width: 14px;
+  height: 14px;
+  padding-right: 5px;
+}
+
+.collection-container .number {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.collection-container .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.collection-container .collection-image {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.collection-container .image-container .verified-icon {
+  width: 20px;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+
+.collection-details {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.collection-details .name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  width: 172.85px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.collection-details .floor-price {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(138, 147, 155);
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.collection-details .floor-price .phrase-one {
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.collection-details .floor-price .phrase-two {
+  font-weight: 600;
+}
+
+.collection-trade-info {
+  text-align: end;
+  font-size: 14px;
+}
+
+.collection-trade-info .volume {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: rgb(138, 147, 155);
+}
