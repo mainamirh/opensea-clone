@@ -39,7 +39,8 @@ const trending = ({ NFTs }) => {
   return (
     <div className="trending-section">
       <div className="trending-title">
-        Trending in <span>all categories</span>{" "}
+        Trending in{" "}
+        <span style={{ color: "rgb(32, 129, 226)" }}>all categories</span>
       </div>
       <div className="trending-container">
         <Swiper

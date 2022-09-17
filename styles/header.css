@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 
-.opensea-logo {
+.header .left-section .opensea-logo {
   height: 40px;
   margin: 15px 10px 15px 15px;
 }
@@ -77,7 +77,7 @@
 .right-section-1 button {
   border: none;
   background-color: white;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgb(4, 17, 29);
   font-weight: 600;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -96,7 +96,7 @@
 
 .right-section-2 .material-symbols-rounded,
 .right-section-2 .material-symbols-outlined {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgb(4, 17, 29);
   font-size: 31px;
   font-weight: 600;
   cursor: pointer;
@@ -104,5 +104,5 @@
 
 .right-section-2 .material-symbols-rounded:hover,
 .right-section-2 .material-symbols-outlined:hover {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.75);
 }

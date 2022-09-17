@@ -1,0 +1,166 @@
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  background-color: rgb(24, 104, 183);
+  color: white;
+  padding: 50px 120px 20px 120px;
+}
+
+.site-footer .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.site-footer .description {
+  font-size: 16px;
+  font-weight: 400;
+}
+.site-footer .section-one {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(229, 232, 235, 0.25);
+}
+
+.section-one .stay-in-loop {
+  display: flex;
+  flex-direction: column;
+  width: 527px;
+}
+
+.stay-in-loop .subscription {
+  display: flex;
+}
+
+.stay-in-loop .subscription .email {
+  flex: 1;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 10px;
+}
+
+.stay-in-loop .subscription .email::placeholder {
+  font-size: 16px;
+  color: rgba(128, 128, 128, 0.787);
+}
+
+.stay-in-loop .subscription .sign-up {
+  background-color: rgb(32, 129, 226);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 130px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 16px;
+  transition: all 0.15s;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.stay-in-loop .subscription .sign-up:hover {
+  background-color: rgb(46, 147, 247);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.join-community {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.join-community .social {
+  display: flex;
+}
+
+.join-community a {
+  margin-right: 12px;
+  background-color: rgb(32, 129, 226);
+  padding: 15px 10px 10px 10px;
+  border-radius: 10px;
+  transition: all 0.15s;
+}
+
+.join-community a:hover {
+  background-color: rgb(46, 147, 247);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.join-community .social img {
+  width: 32px;
+  height: 22px;
+}
+
+.site-footer .section-two {
+  display: flex;
+  padding: 80px 0 70px 0;
+  border-bottom: 1px solid rgba(229, 232, 235, 0.25);
+}
+
+.site-footer .section-two .quarter {
+  width: 295px;
+}
+
+.site-footer .section-two .quarter .title {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-two .quarter .opensea-logo img {
+  width: 44px;
+  margin-bottom: 8px;
+}
+
+.section-two .three-quarters {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.three-quarters .footer-header {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.three-quarters .footer-header-stats {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.three-quarters .link-list a {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.three-quarters .link-list a:hover {
+  opacity: 0.8;
+}
+
+.section-one .three-quarters .marketplace {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer .section-three {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  margin: 30px 3px 15px 12px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.site-footer .section-three .right-section a {
+  margin-left: 15px;
+}

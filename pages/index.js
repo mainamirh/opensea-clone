@@ -4,7 +4,8 @@ import Hero from "../components/hero";
 import Carousel from "../components/carousel";
 import TopCollections from "../components/top-collections";
 import Trending from "../components/trending";
-import Browse from "../components/browse";
+import Categories from "../components/categories";
+import Footer from "../components/footer";
 
 import { images } from "./resources";
 import { collections } from "./resources";
@@ -27,10 +28,12 @@ export default function Home() {
         {/* trending */}
         <Trending NFTs={trending} />
         {/* Browse by category */}
-        <Browse categories={categories} />
+        <Categories categories={categories} />
       </main>
 
-      <footer className=""></footer>
+      <footer className="">
+        <Footer />
+      </footer>
     </div>
   );
 }

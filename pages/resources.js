@@ -6,9 +6,11 @@ export const images = [
   },
 
   {
-    image: "/images/slide-3.jpg",
-    name: "LA CONFIDENTIAL SERIES",
-    description: "A film city in the dark",
+    image:
+      "https://img.seadn.io/files/b4b7149dd213cf022d93551d107bb346.png?auto=format&fit=max&w=384",
+    name: "CryptoPunks",
+    description:
+      "CryptoPunks launched as a fixed set of 10,000 items in mid-2017.",
   },
 
   {
@@ -263,4 +265,43 @@ export const trending = [
   },
 ];
 
-export const categories = [];
+export const categories = [
+  {
+    image: "https://opensea.io/static/images/categories/art.png",
+    name: "Art",
+  },
+  {
+    image: "https://opensea.io/static/images/categories/music.png",
+    name: "Music",
+  },
+  {
+    image: "https://opensea.io/static/images/categories/trading-cards.png",
+    name: "Trading Cards",
+  },
+  {
+    image: "https://opensea.io/static/images/categories/collectibles.png",
+    name: "Collectible",
+  },
+  {
+    image:
+      "https://opensea.io/static/images/categories/photography-category.png",
+    name: "Photography",
+  },
+  {
+    image: "https://opensea.io/static/images/categories/utility.png",
+    name: "Utility",
+  },
+  {
+    image: "https://opensea.io/static/images/categories/domain-names.png",
+    name: "Domain Names",
+  },
+  {
+    image: "https://opensea.io/static/images/categories/sports.png",
+    name: "Sports",
+  },
+
+  {
+    image: "https://opensea.io/static/images/categories/virtual-worlds.png",
+    name: "Virtual Worlds",
+  },
+];

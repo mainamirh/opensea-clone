@@ -21,7 +21,7 @@ const hero = () => {
           </div>
         </div>
 
-        <div className="footer">
+        <div className="nft-container">
           <img
             className="nft-of-day"
             src="https://img.seadn.io/files/652b5d515f3cf7842caef2f685fea66a.png?auto=format&fit=max&w=384"
