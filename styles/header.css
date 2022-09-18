@@ -17,9 +17,7 @@
   align-items: center;
   justify-content: space-evenly;
   width: 170px;
-  margin-right: 15px;
-  margin-left: 9px;
-  cursor: pointer;
+  margin: 0 30px;
 }
 
 .header .left-section .opensea-logo {
@@ -30,7 +28,8 @@
 .left-section .title {
   font-weight: bold;
   font-size: 22px;
-  margin-top: 16px;
+  margin-top: 22px;
+  text-decoration: none;
 }
 
 .middle-section {
@@ -38,9 +37,9 @@
   flex: 1;
   align-items: center;
   padding: 7px;
-  margin: 0 15px 0 15px;
+  margin: 0 20px 0 20px;
   border: 1px solid rgb(212, 211, 211);
-  border-radius: 8px;
+  border-radius: 12px;
   transition: box-shadow 0.15s;
 }
 
@@ -72,6 +71,7 @@
   display: flex;
   justify-content: space-between;
   width: 350px;
+  height: 100%;
 }
 
 .right-section-1 button {
@@ -82,16 +82,98 @@
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+  position: relative;
 }
 
 .right-section-1 button:hover {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.explore .tooltip,
+.stats .tooltip,
+.resources .tooltip,
+.account .tooltip {
+  opacity: 0;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 215px;
+  height: 0;
+  font-weight: 600;
+  font-size: 16px;
+  overflow: hidden;
+  text-align: start;
+  white-space: nowrap;
+  position: absolute;
+  top: 65px;
+  left: -10px;
+  z-index: 20;
+  transition: all 0.15s;
+}
+
+.account .tooltip {
+  left: auto;
+  right: 50px;
+}
+
+.explore:hover .tooltip,
+.stats:hover .tooltip,
+.resources:hover .tooltip,
+.account:hover .tooltip {
+  opacity: 1;
+  height: auto;
+}
+
+.explore .tooltip .tooltip-item,
+.stats .tooltip .tooltip-item,
+.resources .tooltip .tooltip-item,
+.account .tooltip .tooltip-item {
+  display: flex;
+  color: black;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+.explore .tooltip .tooltip-item:hover,
+.stats .tooltip .tooltip-item:hover,
+.resources .tooltip .tooltip-item:hover,
+.account .tooltip .tooltip-item:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.explore .tooltip .first,
+.stats .tooltip .first,
+.resources .tooltip .first,
+.account .tooltip .first {
+  border-radius: 10px 10px 0 0;
+}
+
+.explore .tooltip .last,
+.stats .tooltip .last,
+.resources .tooltip .last,
+.account .tooltip .last {
+  border-radius: 0 0 10px 10px;
+}
+
+.explore .tooltip .tooltip-item img {
+  width: 24px;
+  margin-right: 10px;
+}
+
 .right-section-2 {
   display: flex;
   width: 160px;
   justify-content: space-evenly;
+  height: 100%;
+}
+
+.right-section-2 .account,
+.right-section-2 .wallet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: max-content;
 }
 
 .right-section-2 .material-symbols-rounded,
