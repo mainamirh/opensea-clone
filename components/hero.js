@@ -4,7 +4,7 @@ const hero = () => {
     "OpenSea is the world's first and largest NFT marketplace";
 
   return (
-    <div>
+    <div className="hero-container">
       <div className="hero-image"> </div>
 
       <div className="hero">

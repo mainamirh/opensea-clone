@@ -31,6 +31,7 @@
   height: 500px;
   border-radius: 15px;
   object-fit: cover;
+  transition: transform 0.4s;
 }
 
 .carousel-slide .slide-container {
@@ -38,11 +39,11 @@
   display: flex;
   border-radius: 15px;
   cursor: pointer;
-  transition: box-shadow 0.15s;
+  overflow: hidden;
 }
 
-.carousel-slide .slide-container:hover {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+.carousel-slide .slide-container:hover .slide-img {
+  transform: scale(1.1);
 }
 
 .slide-container .slide-details {

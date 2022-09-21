@@ -1,8 +1,35 @@
+import { useEffect } from "react";
+
 const header = () => {
   const placeholder = "Search items, collections, and accounts";
 
+  useEffect(() => {
+    const hero = document.querySelector(".hero-container");
+    const header = document.querySelector(".header");
+    const options = {
+      threshold: 0.9,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          header.classList.add("dynamic-header");
+        } else {
+          header.classList.remove("dynamic-header");
+        }
+      });
+    }, options);
+
+    observer.observe(hero);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className="header dynamic-header">
       <a href="https://opensea.io/" target="_blank" className="left-section">
         <img
           className="opensea-logo"
