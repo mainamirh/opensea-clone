@@ -12,13 +12,13 @@ import { collections } from "./resources";
 import { trending } from "./resources";
 import { categories } from "./resources";
 
-export default function Home() {
+export default function Home({ darkMode, setDarkMode }) {
   return (
     <div className="">
       <Head>
         <title>OpenSea Clone</title>
       </Head>
-      <Header />
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <main className="">
         <Hero />
         {/* Notable Drops */}

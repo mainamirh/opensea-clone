@@ -1,22 +1,26 @@
 import { useEffect } from "react";
+import Toggle_button from "./toggle-button";
 
-const header = () => {
+const header = ({ darkMode, setDarkMode }) => {
   const placeholder = "Search items, collections, and accounts";
 
   useEffect(() => {
     const hero = document.querySelector(".hero-container");
     const header = document.querySelector(".header");
+    const searchBar = document.querySelector(".middle-section");
+
     const options = {
       threshold: 0.9,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry.isIntersecting);
         if (entry.isIntersecting) {
           header.classList.add("dynamic-header");
+          searchBar.classList.add("middle-section-dynamic");
         } else {
           header.classList.remove("dynamic-header");
+          searchBar.classList.remove("middle-section-dynamic");
         }
       });
     }, options);
@@ -29,7 +33,7 @@ const header = () => {
   }, []);
 
   return (
-    <header className="header dynamic-header">
+    <header className="header">
       <a href="https://opensea.io/" target="_blank" className="left-section">
         <img
           className="opensea-logo"
@@ -39,9 +43,9 @@ const header = () => {
           OpenSea
           <span
             style={{
-              fontSize: "13px",
+              fontSize: "14px",
               marginLeft: "3px",
-              fontWeight: "500",
+              fontWeight: "600",
               color: "rgb(32, 129, 226)",
             }}
           >
@@ -164,9 +168,10 @@ const header = () => {
             <a className="tooltip-item" href="#">
               Settings
             </a>
-            <a className="tooltip-item last" href="#">
+            <div className="tooltip-item last night-mode">
               Night Mode
-            </a>
+              <Toggle_button darkMode={darkMode} setDarkMode={setDarkMode} />
+            </div>
           </div>
         </div>
         <div className="wallet">

@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,15 +41,13 @@
   align-items: center;
   padding: 7px;
   margin: 0 20px 0 20px;
-  border: 2px solid rgba(128, 128, 128, 0.4);
   border-radius: 12px;
-  transition: box-shadow 0.15s;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: rgba(128, 128, 128, 0.787);
+  transition: all 0.15s;
+  border: 2px solid rgba(128, 128, 128, 0.6);
 }
 
-.middle-section:hover {
-  box-shadow: 1px 1px 5px rgb(223, 223, 223);
+.middle-section-dynamic {
+  border: none;
 }
 
 .middle-section .material-symbols-rounded {
@@ -78,7 +75,7 @@
 .right-section-1 button {
   border: none;
   background-color: transparent;
-  color: rgb(4, 17, 29);
+  color: inherit;
   font-weight: 600;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -86,16 +83,11 @@
   position: relative;
 }
 
-.right-section-1 button:hover {
-  color: rgba(0, 0, 0, 0.7);
-}
-
 .explore .tooltip,
 .stats .tooltip,
 .resources .tooltip,
 .account .tooltip {
   opacity: 0;
-  background-color: white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   width: 215px;
@@ -130,16 +122,8 @@
 .resources .tooltip .tooltip-item,
 .account .tooltip .tooltip-item {
   display: flex;
-  color: black;
   padding: 15px 16px;
   text-decoration: none;
-}
-
-.explore .tooltip .tooltip-item:hover,
-.stats .tooltip .tooltip-item:hover,
-.resources .tooltip .tooltip-item:hover,
-.account .tooltip .tooltip-item:hover {
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .explore .tooltip .first,
@@ -168,6 +152,12 @@
   height: 100%;
 }
 
+.right-section-2 .account .night-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .right-section-2 .account,
 .right-section-2 .wallet {
   display: flex;
@@ -179,13 +169,8 @@
 
 .right-section-2 .material-symbols-rounded,
 .right-section-2 .material-symbols-outlined {
-  color: rgb(4, 17, 29);
+  color: inherit;
   font-size: 31px;
   font-weight: 600;
   cursor: pointer;
-}
-
-.right-section-2 .material-symbols-rounded:hover,
-.right-section-2 .material-symbols-outlined:hover {
-  color: rgba(0, 0, 0, 0.75);
 }

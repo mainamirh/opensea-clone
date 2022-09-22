@@ -23,6 +23,7 @@
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   width: max-content;
   transition: box-shadow 0.15s;
+  cursor: pointer;
 }
 
 .trending-container .nft-slide:hover {
@@ -79,7 +80,7 @@
   width: 18px;
 }
 
-.trending-section .prev-button,
+/* .trending-section .prev-button,
 .trending-section .next-button {
   background-color: white;
   box-shadow: 0 1px 5px rgb(187, 187, 187);
@@ -92,7 +93,7 @@
   transition: box-shadow 0.15s;
   z-index: 1;
   user-select: none;
-}
+} */
 
 .trending-section .prev-button:hover,
 .trending-section .next-button:hover {

@@ -48,17 +48,11 @@ p {
 .collection-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(229, 232, 235);
   padding: 16px;
   width: 329px;
   height: 54px;
   transition: all 0.15s;
   cursor: pointer;
-}
-
-.collection-container:hover {
-  border-radius: 10px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .collection-container .currency {
