@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import Header from "../components/header";
 import Hero from "../components/hero";
@@ -13,6 +14,23 @@ import { trending } from "./resources";
 import { categories } from "./resources";
 
 export default function Home({ darkMode, setDarkMode }) {
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (darkMode) {
+      if (!body.classList.contains("body-light")) {
+        body.classList.add("body-dark");
+        return;
+      }
+      body.classList.replace("body-light", "body-dark");
+    } else {
+      if (!body.classList.contains("body-dark")) {
+        body.classList.add("body-light");
+        return;
+      }
+      body.classList.replace("body-dark", "body-light");
+    }
+  }, [darkMode]);
+
   return (
     <div className="">
       <Head>

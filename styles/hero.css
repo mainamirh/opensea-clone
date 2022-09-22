@@ -143,3 +143,27 @@
   font-weight: 400;
   color: rgb(112, 122, 131);
 }
+
+/* Light Theme */
+.body-light .hero-image {
+  background-image: linear-gradient(to top, var(--back-white), transparent),
+    url("https://img.seadn.io/files/652b5d515f3cf7842caef2f685fea66a.png?auto=format&fit=max&w=384");
+}
+
+.body-light .hero .nft-detail {
+  background-color: var(--back-white);
+}
+
+/* Light Theme */
+
+/* Dark Theme */
+.body-dark .hero-image {
+  background-image: linear-gradient(to top, var(--black), transparent),
+    url("https://img.seadn.io/files/652b5d515f3cf7842caef2f685fea66a.png?auto=format&fit=max&w=384");
+}
+
+.body-dark .hero .nft-detail {
+  background-color: var(--black);
+}
+
+/* Dark Theme */

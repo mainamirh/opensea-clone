@@ -126,3 +126,18 @@
   height: 6px !important;
   margin-left: 20px !important;
 }
+
+/* Light Theme */
+.body-light .prev-button,
+.body-light .next-button {
+  background-color: var(--back-white);
+}
+/* Light Theme */
+
+/* Dark Theme */
+.body-dark .prev-button,
+.body-dark .next-button {
+  background-color: var(--accent);
+  box-shadow: none !important;
+}
+/* Dark Theme */

@@ -136,3 +136,26 @@ p {
   font-weight: 600;
   color: rgb(138, 147, 155);
 }
+
+/* Light Theme */
+.body-light .collections-grid .collection-container {
+  border-bottom: 1px solid var(--white);
+}
+
+.body-light .collection-container:hover {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+/* Light Theme */
+
+/* Dark Theme */
+.body-dark .collections-grid .collection-container {
+  border-bottom: 1px solid var(--accent);
+}
+
+.body-dark .collections-grid .collection-container:hover {
+  border-radius: 10px;
+  background-color: var(--accent);
+  box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.2);
+}
+/* Dark Theme */

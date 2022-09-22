@@ -80,21 +80,6 @@
   width: 18px;
 }
 
-/* .trending-section .prev-button,
-.trending-section .next-button {
-  background-color: white;
-  box-shadow: 0 1px 5px rgb(187, 187, 187);
-  border-radius: 25px;
-  font-size: 40px;
-  font-weight: 500;
-  padding: 4px;
-  position: absolute;
-  cursor: pointer;
-  transition: box-shadow 0.15s;
-  z-index: 1;
-  user-select: none;
-} */
-
 .trending-section .prev-button:hover,
 .trending-section .next-button:hover {
   box-shadow: 0 1px 7px rgb(157, 157, 157);
@@ -109,3 +94,15 @@
   top: 35%;
   right: -10px;
 }
+
+/* Light Theme */
+.body-light .trending-container .nft-slide {
+  background-color: var(--back-white);
+}
+/* Light Theme */
+
+/* Dark Theme */
+.body-dark .trending-container .nft-slide {
+  background-color: var(--accent);
+}
+/* Dark Theme */

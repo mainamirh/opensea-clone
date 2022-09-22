@@ -20,87 +20,23 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: light) {
+/* Light Theme */
+.body-light {
+  color: var(--black);
+  background: var(--back-white);
+}
+/* Light Theme */
+
+/* Dark Theme */
+.body-dark {
+  color: var(--white);
+  background: var(--black);
+}
+/* Dark Theme */
+
+/* @media (prefers-color-scheme: light) {
   html {
     color-scheme: light;
-  }
-  body {
-    color: var(--black);
-    background: var(--back-white);
-  }
-  .hero-image {
-    background-image: linear-gradient(to top, var(--back-white), transparent),
-      url("https://img.seadn.io/files/652b5d515f3cf7842caef2f685fea66a.png?auto=format&fit=max&w=384");
-  }
-
-  .header {
-    background-color: var(--back-white);
-  }
-
-  .header .middle-section {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: gray;
-  }
-
-  .search-bar::placeholder {
-    color: gray;
-  }
-
-  .header .middle-section:hover {
-    background-color: white;
-  }
-
-  .header .middle-section:focus-within {
-    background-color: white;
-  }
-
-  .header .right-section-1 button:hover {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  .right-section-2 .material-symbols-rounded:hover,
-  .right-section-2 .material-symbols-outlined:hover {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  .explore .tooltip,
-  .stats .tooltip,
-  .resources .tooltip,
-  .account .tooltip {
-    background-color: var(--back-white);
-    color: var(--black);
-  }
-
-  .explore .tooltip .tooltip-item:hover,
-  .stats .tooltip .tooltip-item:hover,
-  .resources .tooltip .tooltip-item:hover,
-  .account .tooltip .tooltip-item:hover {
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 -1px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .nft-detail {
-    background-color: var(--back-white);
-  }
-  .prev-button,
-  .next-button {
-    background-color: var(--back-white);
-  }
-
-  .collections-grid .collection-container {
-    border-bottom: 1px solid var(--white);
-  }
-
-  .collection-container:hover {
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .trending-container .nft-slide {
-    background-color: var(--back-white);
-  }
-
-  .site-footer {
-    background-color: var(--footer-color-light);
   }
 }
 
@@ -108,89 +44,4 @@ a {
   html {
     color-scheme: dark;
   }
-  body {
-    color: var(--white);
-    background: var(--black);
-  }
-  .hero-image {
-    background-image: linear-gradient(to top, var(--black), transparent),
-      url("https://img.seadn.io/files/652b5d515f3cf7842caef2f685fea66a.png?auto=format&fit=max&w=384");
-  }
-
-  .header {
-    background-color: var(--black);
-  }
-
-  .header .middle-section {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: white;
-  }
-
-  .search-bar::placeholder {
-    color: white;
-  }
-
-  .header .middle-section:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .header .middle-section:focus-within {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .header .right-section-1 button:hover {
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  .right-section-2 .material-symbols-rounded:hover,
-  .right-section-2 .material-symbols-outlined:hover {
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  .explore .tooltip,
-  .stats .tooltip,
-  .resources .tooltip,
-  .account .tooltip {
-    background-color: var(--accent);
-    color: var(--white);
-  }
-
-  .explore .tooltip .tooltip-item:hover,
-  .stats .tooltip .tooltip-item:hover,
-  .resources .tooltip .tooltip-item:hover,
-  .account .tooltip .tooltip-item:hover {
-    background-color: var(--black);
-  }
-
-  .nft-detail {
-    background-color: var(--black);
-  }
-
-  .prev-button,
-  .next-button {
-    background-color: var(--accent);
-    box-shadow: none !important;
-  }
-
-  .collections-grid .collection-container {
-    border-bottom: 1px solid var(--accent);
-  }
-
-  .collections-grid .collection-container:hover {
-    border-radius: 10px;
-    background-color: var(--accent);
-    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.2);
-  }
-
-  .trending-container .nft-slide {
-    background-color: var(--accent);
-  }
-
-  .category-container {
-    background-color: var(--accent);
-  }
-
-  .site-footer {
-    background-color: var(--footer-color-dark);
-  }
-}
+} */

@@ -163,3 +163,15 @@
 .site-footer .section-three .right-section a {
   margin-left: 15px;
 }
+
+/* Light Theme */
+.body-light .site-footer {
+  background-color: var(--footer-color-light);
+}
+/* Light Theme */
+
+/* Dark Theme */
+.body-dark .site-footer {
+  background-color: var(--footer-color-dark);
+}
+/* Dark Theme */

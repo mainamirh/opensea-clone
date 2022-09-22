@@ -51,3 +51,15 @@
   font-size: 20px;
   font-weight: 600;
 }
+
+/* Light Theme */
+.body-light .category-container {
+  background-color: var(--back-white);
+}
+/* Light Theme */
+
+/* Dark Theme */
+.body-dark .category-container {
+  background-color: var(--accent);
+}
+/* Dark Theme */
