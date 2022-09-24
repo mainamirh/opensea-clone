@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Head from "next/head";
 
 import Header from "../components/Header";
@@ -9,10 +8,10 @@ import Trending from "../components/Trending";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 
-import { images } from "./resources";
-import { collections } from "./resources";
-import { trending } from "./resources";
-import { categories } from "./resources";
+import { images } from "../components/resources";
+import { collections } from "../components/resources";
+import { trending } from "../components/resources";
+import { categories } from "../components/resources";
 
 export default function Home({ setDarkMode }) {
   return (
