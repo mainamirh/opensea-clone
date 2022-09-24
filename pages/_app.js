@@ -13,7 +13,42 @@ function MyApp({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    console.log(darkMode);
+    const toggleButton = document.querySelector(".toggle-button input");
+    const darkModeStorage = localStorage.getItem("darkMode");
+    if (darkModeStorage) {
+      toggleButton.checked = true;
+    } else {
+      toggleButton.checked = false;
+    }
+  }, []);
+
+  const enableDarkMode = (body) => {
+    if (!body.classList.contains("body-light")) {
+      body.classList.add("body-dark");
+      localStorage.setItem("darkMode", true);
+      return;
+    }
+    body.classList.replace("body-light", "body-dark");
+    localStorage.setItem("darkMode", true);
+  };
+
+  const disableDarkMode = (body) => {
+    if (!body.classList.contains("body-dark")) {
+      body.classList.add("body-light");
+      localStorage.setItem("darkMode", false);
+      return;
+    }
+    body.classList.replace("body-dark", "body-light");
+    localStorage.setItem("darkMode", false);
+  };
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (darkMode) {
+      enableDarkMode(body);
+    } else {
+      disableDarkMode(body);
+    }
   }, [darkMode]);
 
   return (

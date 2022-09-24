@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
-const trending = ({ NFTs }) => {
+const Trending = ({ NFTs }) => {
   const [swiper, setSwiper] = useState({});
   const [slides, setSlides] = useState([]);
 
@@ -99,4 +99,4 @@ const trending = ({ NFTs }) => {
   );
 };
 
-export default trending;
+export default Trending;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const top_collections = ({ NFT_Collections }) => {
+const TopCollections = ({ NFT_Collections }) => {
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
@@ -72,4 +72,4 @@ const top_collections = ({ NFT_Collections }) => {
   );
 };
 
-export default top_collections;
+export default TopCollections;

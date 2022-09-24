@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const browse = ({ categories }) => {
+const Categories = ({ categories }) => {
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
@@ -26,4 +26,4 @@ const browse = ({ categories }) => {
   );
 };
 
-export default browse;
+export default Categories;

@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
-const carousel = ({ images }) => {
+const Carousel = ({ images }) => {
   const [swiper, setSwiper] = useState({});
   const [slides, setSlides] = useState([]);
 
@@ -91,4 +91,4 @@ const carousel = ({ images }) => {
   );
 };
 
-export default carousel;
+export default Carousel;

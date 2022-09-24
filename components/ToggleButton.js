@@ -1,4 +1,4 @@
-const toggle_button = ({ darkMode, setDarkMode }) => {
+const ToggleButton = ({ setDarkMode }) => {
   return (
     <div className="toggle-button">
       <label className="switch">
@@ -9,4 +9,4 @@ const toggle_button = ({ darkMode, setDarkMode }) => {
   );
 };
 
-export default toggle_button;
+export default ToggleButton;

@@ -1,42 +1,26 @@
 import { useEffect } from "react";
 import Head from "next/head";
-import Header from "../components/header";
-import Hero from "../components/hero";
-import Carousel from "../components/carousel";
-import TopCollections from "../components/top-collections";
-import Trending from "../components/trending";
-import Categories from "../components/categories";
-import Footer from "../components/footer";
+
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Carousel from "../components/Carousel";
+import TopCollections from "../components/TopCollections";
+import Trending from "../components/Trending";
+import Categories from "../components/Categories";
+import Footer from "../components/Footer";
 
 import { images } from "./resources";
 import { collections } from "./resources";
 import { trending } from "./resources";
 import { categories } from "./resources";
 
-export default function Home({ darkMode, setDarkMode }) {
-  useEffect(() => {
-    const body = document.querySelector("body");
-    if (darkMode) {
-      if (!body.classList.contains("body-light")) {
-        body.classList.add("body-dark");
-        return;
-      }
-      body.classList.replace("body-light", "body-dark");
-    } else {
-      if (!body.classList.contains("body-dark")) {
-        body.classList.add("body-light");
-        return;
-      }
-      body.classList.replace("body-dark", "body-light");
-    }
-  }, [darkMode]);
-
+export default function Home({ setDarkMode }) {
   return (
     <div className="">
       <Head>
         <title>OpenSea Clone</title>
       </Head>
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Header setDarkMode={setDarkMode} />
       <main className="">
         <Hero />
         {/* Notable Drops */}

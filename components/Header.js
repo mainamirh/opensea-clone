@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import Toggle_button from "./toggle-button";
+import Toggle_button from "./ToggleButton";
 
-const header = ({ darkMode, setDarkMode }) => {
+const Header = ({ setDarkMode }) => {
   const placeholder = "Search items, collections, and accounts";
 
   useEffect(() => {
@@ -170,7 +170,7 @@ const header = ({ darkMode, setDarkMode }) => {
             </a>
             <div className="tooltip-item last night-mode">
               Night Mode
-              <Toggle_button darkMode={darkMode} setDarkMode={setDarkMode} />
+              <Toggle_button setDarkMode={setDarkMode} />
             </div>
           </div>
         </div>
@@ -184,4 +184,4 @@ const header = ({ darkMode, setDarkMode }) => {
   );
 };
 
-export default header;
+export default Header;

@@ -1,4 +1,4 @@
-const hero = () => {
+const Hero = () => {
   const title = "Discover, collect, and sell extraordinary NFTs";
   const description =
     "OpenSea is the world's first and largest NFT marketplace";
@@ -43,4 +43,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;
