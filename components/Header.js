@@ -34,7 +34,12 @@ const Header = ({ setDarkMode }) => {
 
   return (
     <header className="header">
-      <a href="https://opensea.io/" target="_blank" className="left-section">
+      <a
+        href="https://opensea.io/"
+        target="_blank"
+        rel="noreferrer"
+        className="left-section"
+      >
         <img
           className="opensea-logo"
           src="https://opensea.io/static/images/logos/opensea.svg"

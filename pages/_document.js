@@ -4,10 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <script
-          src="https://kit.fontawesome.com/c217d4026c.js"
-          crossOrigin="anonymous"
-        ></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

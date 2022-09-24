@@ -49,7 +49,12 @@ const Footer = () => {
           <div className="opensea-logo">
             <img src="https://opensea.io/static/images/logos/opensea-white.svg" />
           </div>
-          <a href="https://opensea.io/" className="title" target="_blank">
+          <a
+            href="https://opensea.io/"
+            className="title"
+            target="_blank"
+            rel="noreferrer"
+          >
             Opensea
           </a>
           <div className="description">
@@ -62,37 +67,37 @@ const Footer = () => {
           <div className="marketplace">
             <div className="footer-header">Marketplace</div>
             <div className="link-list">
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 All NFTs
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Solana NFTs
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Art
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Collectibles
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Domain Names
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Music
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Photography
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Sports
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Trading Cards
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Utility
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Virtual Worlds
               </a>
             </div>
@@ -100,28 +105,28 @@ const Footer = () => {
           <div className="my-account">
             <div className="footer-header">My Account</div>
             <div className="link-list">
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Profile
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Favorites
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Watchlist
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 My Collections
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Settings
               </a>
             </div>
             <div className="footer-header-stats">Stats</div>
             <div className="link-list">
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Rankings
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Activity
               </a>
             </div>
@@ -129,28 +134,28 @@ const Footer = () => {
           <div className="resources">
             <div className="footer-header">Resources</div>
             <div className="link-list">
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Learn
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Help Center
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Platform Status
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Partners
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Taxes
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Blog
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Docs
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Newsletter
               </a>
             </div>
@@ -158,16 +163,16 @@ const Footer = () => {
           <div className="company">
             <div className="footer-header">Company</div>
             <div className="link-list">
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 About
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Careers
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Ventures
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 Grants
               </a>
             </div>
