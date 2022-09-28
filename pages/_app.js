@@ -13,12 +13,12 @@ import "../styles/toggle-button.css";
 function MyApp({ Component, pageProps }) {
   const initialRender = useRef(true);
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(undefined);
 
   useEffect(() => {
     const data = window.localStorage.getItem("darkMode");
     const darkModeState = JSON.parse(data);
-    if (darkModeState !== null) setDarkMode(darkModeState);
+    darkModeState !== null ? setDarkMode(darkModeState) : setDarkMode(false);
   }, []);
 
   useEffect(() => {
