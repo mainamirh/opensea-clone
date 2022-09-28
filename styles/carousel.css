@@ -14,11 +14,11 @@
 
 .carousel-container {
   position: relative;
-  width: 1200px;
+  width: 85%;
 }
 
 .swiper {
-  padding-bottom: 50px !important;
+  padding-bottom: 60px !important;
 }
 
 .carousel-slide {
@@ -126,6 +126,28 @@
   height: 6px !important;
   margin-left: 20px !important;
 }
+
+/* Responsive */
+@media (min-width: 1320px) {
+  .carousel-container {
+    width: 1230px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1319px) {
+  .carousel-slide .slide-img {
+    width: 340px !important;
+    height: 450px !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .carousel-slide .slide-img {
+    width: 300px !important;
+    height: 420px !important;
+  }
+}
+/* Responsive */
 
 /* Light Theme */
 .body-light .prev-button,

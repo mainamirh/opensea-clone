@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import Script from "next/script";
 
 import "../styles/globals.css";
 import "../styles/header.css";
@@ -17,26 +16,19 @@ function MyApp({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    const toggleButton = document.querySelector(".toggle-button input");
     const data = window.localStorage.getItem("darkMode");
     const darkModeState = JSON.parse(data);
-
-    if (darkModeState) {
-      toggleButton.checked = true;
-    } else {
-      toggleButton.checked = false;
-    }
-
     if (darkModeState !== null) setDarkMode(darkModeState);
   }, []);
 
   useEffect(() => {
+    // Prevent first render to avoid conflict between two useEffects.
     if (initialRender.current) {
       initialRender.current = false;
       return;
     }
 
-    const body = document.querySelector("body");
+    const body = document.querySelector("html");
     if (darkMode) {
       enableDarkMode(body);
     } else {

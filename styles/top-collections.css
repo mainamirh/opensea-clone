@@ -137,6 +137,17 @@ p {
   color: rgb(138, 147, 155);
 }
 
+/* Responsive */
+@media (max-width: 1200px) {
+  .top-collections-container .collections-grid {
+    flex-direction: column;
+    height: 1000px;
+    overflow-y: scroll;
+    margin: 30px 0;
+  }
+}
+/* Responsive */
+
 /* Light Theme */
 .body-light .collections-grid .collection-container {
   border-bottom: 1px solid var(--white);

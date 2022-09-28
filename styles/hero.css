@@ -100,8 +100,7 @@
   width: 500px;
   height: 350px;
   object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-radius: 15px 15px 0 0;
   box-shadow: -1px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -109,9 +108,9 @@
   display: flex;
   align-items: center;
   padding: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 0 0 15px 15px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.106);
+  font-size: 14px;
 }
 
 .nft-detail .nft-profile {
@@ -126,13 +125,11 @@
 }
 
 .nft-detail .nft-name {
-  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .nft-detail .owner {
-  font-size: 14px;
   font-weight: 400;
   color: rgb(32, 129, 226);
   text-transform: uppercase;
@@ -143,6 +140,61 @@
   font-weight: 400;
   color: rgb(112, 122, 131);
 }
+
+/* Responsive */
+@media (max-width: 968px) {
+  .hero-image {
+    height: 900px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    top: 100px;
+  }
+  .nft-container {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 1317px) {
+  .hero-title-container {
+    width: 550px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .button-container button {
+    font-size: 15px;
+    padding: 15px 0;
+    font-weight: 600;
+    width: 150px;
+  }
+
+  .nft-of-day {
+    width: 450px !important;
+    height: 300px !important;
+  }
+
+  .nft-detail {
+    padding: 10px !important;
+    font-size: 12px !important;
+  }
+  /* @media (max-width: 600px) {
+    .nft-of-day {
+      width: 400px !important;
+      height: 350px;
+    }
+    .hero-title-container {
+      width: 300px;
+    }
+  } */
+}
+/* Responsive */
 
 /* Light Theme */
 .body-light .hero-image {

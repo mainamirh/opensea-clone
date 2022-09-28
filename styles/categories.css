@@ -21,7 +21,6 @@
 .category-container {
   display: flex;
   flex-direction: column;
-  width: 420px;
   border-radius: 10px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -51,6 +50,18 @@
   font-size: 20px;
   font-weight: 600;
 }
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .category-container .category-image {
+    width: auto;
+  }
+}
+/* Responsive */
 
 /* Light Theme */
 .body-light .category-container {

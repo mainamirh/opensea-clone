@@ -48,21 +48,14 @@ const Carousel = ({ images }) => {
           }}
           modules={[Pagination]}
           breakpoints={{
-            "@0.00": {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            "@0.75": {
+            900: {
               slidesPerView: 2,
-              spaceBetween: 10,
             },
-            "@1.00": {
+            1100: {
               slidesPerView: 3,
-              spaceBetween: 10,
             },
-            "@1.50": {
+            1449: {
               slidesPerView: 3,
-              spaceBetween: 10,
             },
           }}
           className="mySwiper"
