@@ -194,6 +194,12 @@
     width: 100%;
   }
 }
+
+@media (max-width: 600px) {
+  .section-two .three-quarters {
+    width: 500px;
+  }
+}
 /* Responsive */
 
 /* Light Theme */

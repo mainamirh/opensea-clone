@@ -20,6 +20,14 @@ a {
   text-decoration: none;
 }
 
+/* Responsive */
+@media (max-width: 550px) {
+  html {
+    width: 550px;
+  }
+}
+/* Responsive */
+
 /* Light Theme */
 .body-light {
   color: var(--black);
