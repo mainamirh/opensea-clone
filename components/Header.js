@@ -6,12 +6,12 @@ const Header = ({ darkMode, setDarkMode }) => {
   const placeholder = "Search items, collections, and accounts";
 
   useEffect(() => {
-    const hero = document.querySelector(".header-container");
+    const headerContainer = document.querySelector(".header-container");
     const header = document.querySelector(".header");
     const searchBar = document.querySelector(".middle-section");
 
     const options = {
-      rootMargin: "20px 0px 0px 0px",
+      rootMargin: "25px 0px 0px 0px",
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -26,7 +26,7 @@ const Header = ({ darkMode, setDarkMode }) => {
       });
     }, options);
 
-    observer.observe(hero);
+    observer.observe(headerContainer);
 
     return () => {
       observer.disconnect();
