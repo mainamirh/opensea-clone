@@ -1,9 +1,9 @@
 (function () {
   // Add dynamic-header class
-  const header = document.querySelector(".header");
-  const searchBar = document.querySelector(".middle-section");
-  header.classList.add("dynamic-header");
-  searchBar.classList.add("middle-section-dynamic");
+  // const header = document.querySelector(".header");
+  // const searchBar = document.querySelector(".middle-section");
+  // header.classList.add("dynamic-header");
+  // searchBar.classList.add("middle-section-dynamic");
 
   // Get theme mode from localStorage. Default theme is light mode.
   const data = window.localStorage.getItem("darkMode");

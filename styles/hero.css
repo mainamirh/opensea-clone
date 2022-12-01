@@ -1,3 +1,7 @@
+:root {
+  --image: url("https://i.seadn.io/gae/OtfG2tvOcqF-yCyJ85z04K8732j_Ks3jtSjOck6h0zxS_QcsPxxjzv2Q3kDAy1ksw8swdcbqYafRYkfmwVE3qEWDYt1DtOUedhVYcpE?auto=format&w=512");
+}
+
 .hero-image {
   height: 700px;
   background-repeat: no-repeat;
@@ -219,7 +223,7 @@
 /* Light Theme */
 .body-light .hero-image {
   background-image: linear-gradient(to top, var(--back-white), transparent),
-    url("https://img.seadn.io/files/652b5d515f3cf7842caef2f685fea66a.png?auto=format&fit=max&w=384");
+    var(--image);
 }
 
 .body-light .hero .nft-detail {
@@ -231,7 +235,7 @@
 /* Dark Theme */
 .body-dark .hero-image {
   background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://img.seadn.io/files/652b5d515f3cf7842caef2f685fea66a.png?auto=format&fit=max&w=384");
+    var(--image);
 }
 
 .body-dark .hero .nft-detail {

@@ -17,8 +17,10 @@ const Header = ({ darkMode, setDarkMode }) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          header.classList.add("dynamic-header");
-          searchBar.classList.add("middle-section-dynamic");
+          if (!header.classList.contains("dynamic-header")) {
+            header.classList.add("dynamic-header");
+            searchBar.classList.add("middle-section-dynamic");
+          }
         } else {
           header.classList.remove("dynamic-header");
           searchBar.classList.remove("middle-section-dynamic");
@@ -50,7 +52,7 @@ const Header = ({ darkMode, setDarkMode }) => {
           <Toggle_button darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
       </div>
-      <header className="header">
+      <header className="header dynamic-header">
         <a
           href="https://opensea.io/"
           target="_blank"
@@ -75,7 +77,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             </span>
           </div>
         </a>
-        <div className="middle-section">
+        <div className="middle-section middle-section-dynamic">
           <div className="material-symbols-rounded">search</div>
           <input className="search-bar" type="text" placeholder={placeholder} />
         </div>

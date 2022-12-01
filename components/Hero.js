@@ -1,16 +1,22 @@
 const Hero = () => {
-  const title = "Discover, collect, and sell extraordinary NFTs";
-  const description =
-    "OpenSea is the world's first and largest NFT marketplace";
-
+  const hardcode = {
+    title: "Discover, collect, and sell extraordinary NFTs",
+    description: "OpenSea is the world's first and largest NFT marketplace",
+    nftOfDay:
+      "https://i.seadn.io/gae/OtfG2tvOcqF-yCyJ85z04K8732j_Ks3jtSjOck6h0zxS_QcsPxxjzv2Q3kDAy1ksw8swdcbqYafRYkfmwVE3qEWDYt1DtOUedhVYcpE?auto=format&w=512",
+    nftProfile:
+      "https://i.seadn.io/gcs/files/7374bcc1521d964418b18c4478862686.jpg?auto=format&w=256",
+    nftCollectionName: "KPR",
+    nftOwner: "RoyalGalaxy",
+  };
   return (
     <div className="hero-container">
       <div className="hero-image"> </div>
 
       <div className="hero">
         <div className="hero-title-container">
-          <div className="title">{title}</div>
-          <div className="description">{description}</div>
+          <div className="title">{hardcode.title}</div>
+          <div className="description">{hardcode.description}</div>
           <div className="button-container">
             <button className="explore-button">Explore</button>
             <button className="create-button">Create</button>
@@ -22,18 +28,12 @@ const Hero = () => {
         </div>
 
         <div className="nft-container">
-          <img
-            className="nft-of-day"
-            src="https://img.seadn.io/files/652b5d515f3cf7842caef2f685fea66a.png?auto=format&fit=max&w=384"
-          />
+          <img className="nft-of-day" src={hardcode.nftOfDay} />
           <div className="nft-detail">
-            <img
-              className="nft-profile"
-              src="https://lh3.googleusercontent.com/yNi-XdGxsgQCPpqSio4o31ygAV6wURdIdInWRcFIl46UjUQ1eV7BEndGe8L661OoG-clRi7EgInLX4LPu9Jfw4fq0bnVYHqg7RFi=s168"
-            />
+            <img className="nft-profile" src={hardcode.nftProfile} />
             <div className="nft-info">
-              <div className="nft-name">Pudgy Penguin</div>
-              <div className="owner">DarrenSRS</div>
+              <div className="nft-name">{hardcode.nftCollectionName}</div>
+              <div className="owner">{hardcode.nftOwner}</div>
             </div>
             <div className="material-symbols-outlined">info</div>
           </div>

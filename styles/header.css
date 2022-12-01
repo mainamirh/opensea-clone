@@ -254,11 +254,11 @@
 
 .body-light .header .middle-section {
   background-color: rgba(255, 255, 255, 0.15);
-  color: gray;
+  color: black;
 }
 
 .body-light .header .search-bar::placeholder {
-  color: gray;
+  color: black;
 }
 
 .body-light .header .middle-section:hover {
