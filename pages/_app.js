@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Script from "next/script";
 
 import "../styles/globals.css";
 import "../styles/header.css";
@@ -36,7 +37,11 @@ function MyApp({ Component, pageProps }) {
   };
 
   return (
-    <Component darkMode={darkMode} setDarkMode={toggleTheme} {...pageProps} />
+    <>
+      <Script src="/setTheme.js" strategy="beforeInteractive" />
+
+      <Component darkMode={darkMode} setDarkMode={toggleTheme} {...pageProps} />
+    </>
   );
 }
 

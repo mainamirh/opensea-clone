@@ -25,7 +25,7 @@ export default function Document() {
         />
       </Head>
       <body>
-        <Script src="/setTheme.js" strategy="beforeInteractive"></Script>
+        {/* <Script src="/setTheme.js" strategy="beforeInteractive"></Script> */}
         <Main />
         <NextScript />
       </body>
